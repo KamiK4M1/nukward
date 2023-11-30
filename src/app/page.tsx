@@ -10,7 +10,9 @@ export default function Home() {
     <div className="p-8">
       <button className="text-white" onClick={() => signOut()}>Logout</button>
       <Link href="/signin">
-        <p className="text-white">Signin</p>
+        <p className="hover:bg-indigo-300">
+          <span className="text-white">Signin</span>
+        </p>
       </Link>
     </div>
   )
