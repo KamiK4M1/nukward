@@ -86,7 +86,7 @@ export default function Signup() {
             </div>
 
             <div> 
-            <Link href="signin">
+            <Link href="/signin">
               <button
                 disabled={(!email || !password || !passwordAgain) || (password !== passwordAgain)}
                 onClick={() => signup()}

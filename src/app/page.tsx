@@ -1,7 +1,5 @@
 'use client';
 import { signOut, useSession } from "next-auth/react";
-import { redirect } from "next/navigation";
-import Signin from "./signin/page";
 import Link from "next/dist/client/link";
 
 export default function Home() {
