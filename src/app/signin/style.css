@@ -4,16 +4,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nova Square', sans-serif;
+    
 }
 
 body {
     width: 100%;
     height: 100vh;
+    background-image: url(https://cdn.discordapp.com/attachments/913642653386694667/1180141477960093768/karolina-badzmierowska-8ig2a2Axsxg-unsplash.jpg?ex=657c5766&is=6569e266&hm=4cde09c6b66b0eb1384fad4154463db75530c8a6a0e134c1e18b8e9edafeff97&);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 
 .Top-menu {
     position: relative;
-    background-color: rgb(57, 57, 57);
+    background-color: rgb(69, 14, 14);
     box-shadow: 4px 4px 8px 4px rgba(59, 59, 59, 0.384);
     text-align: right;
 }
@@ -28,8 +33,7 @@ body {
 
 .all {
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(125deg,gray,white);
+    height: 87vh;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -37,14 +41,15 @@ body {
 
 .card {
     position: relative;
-    height: 580px;
+    height: 540px;
     width: 360px;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: 55px;
     background-image: linear-gradient(90deg,rgb(141, 141, 141),rgba(0, 0, 0, 0.412));
     border-radius: 10px;
     box-shadow:  0 0 20px rgba(0, 0, 0, 0.412);
     padding: 40px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +62,7 @@ body {
     left: 55px;
     height: 80px;
     width: 250px;
-    background: #333;
+    background:rgb(69, 14, 14);
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
@@ -83,9 +88,8 @@ body {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .login-form span::before{
     content: attr(data-placeholder);
     position: absolute;

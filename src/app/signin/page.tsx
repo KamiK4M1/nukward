@@ -1,14 +1,16 @@
-"use client";
+"use client"
+
 import React, { useState } from "react";
-import "./first.css";
+import "./style.css";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
 export default function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const router = useRouter();
 
   const handleFocus = (e: {
     target: { classList: { add: (arg0: string) => void } };
@@ -37,10 +39,14 @@ export default function Signin() {
         className="card"
       >
           <div className="sign-in">Sign in</div>
-          <i id="logo" className="fa-solid fa-users"></i>
-          {/* Username */}
+          <i id="logo" className="fa-solid fa-users">
+            <FontAwesomeIcon icon={faUsers} />
+          </i>
+          {/* Email */}
           <div className="login-form">
-            <i className="fa-solid fa-user" id="logo-input"></i>
+            <i className="fa-solid fa-user" id="logo-input">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </i>
             <input
               className="input"
               id="email"
@@ -51,11 +57,13 @@ export default function Signin() {
               onFocus={handleFocus}
               required
             />
-            <span data-placeholder="Username"></span>
+            <span data-placeholder="Email"></span>
           </div>
           {/* Password */}
           <div className="login-form">
-            <i className="fa-solid fa-lock" id="logo-input"></i>
+            <i className="fa-solid fa-lock" id="logo-input">
+              <FontAwesomeIcon icon={faLock} />
+            </i>
             <input
               className="input"
               id="password"
