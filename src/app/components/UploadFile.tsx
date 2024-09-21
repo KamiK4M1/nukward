@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useState } from 'react';
 
 
-const UploadForm: React.FC = () => {
+const UploadFile: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -22,8 +22,12 @@ const UploadForm: React.FC = () => {
   return (
     <form>
       <label>
-        <input type="file" onChange={handleChange} />
+        <input type="file" className=' file-input' onChange={handleChange} />
         <span>+</span>
+      </label>
+        
+      <label>
+      <input type='text' placeholder='Title' required/>
       </label>
       <div className="output">
         { error && <div className="error">{ error }</div>}
@@ -33,4 +37,4 @@ const UploadForm: React.FC = () => {
   );
 }
 
-export default UploadForm;
+export default UploadFile;

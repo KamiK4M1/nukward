@@ -21,7 +21,7 @@ export default function Signin() {
   return (
     <div>
       <header className="Top-menu">
-        <a className="manu-item brand" href="#">
+        <a className="manu-item brand" href="/home">
           Nukward
         </a>
       </header>
@@ -30,13 +30,11 @@ export default function Signin() {
         onSubmit={(e) => {
         e.preventDefault();
         if (email && password){
-          signIn('credentials', {email, password, redirect: true, callbackUrl: '/'});
-        }
-        if (!email || password){
-          alert("your email or password is wrong")
+          signIn('credentials', {email, password, redirect: true, callbackUrl: '/home'});
         }
         }}
         className="card"
+        action="/"
       >
           <div className="sign-in">Sign in</div>
           <i id="logo" className="fa-solid fa-users">
@@ -76,12 +74,10 @@ export default function Signin() {
             />
             <span data-placeholder="Password"></span>
           </div>
-          <p>
-            Don't have account? <a href="/signup">Sign up</a>
-          </p>
+          <p>Don't have account? <a href="./signup" className="Hover">Sign up</a></p>
+          <p className="hu">Forget password? <a href="./forgot-password" className="Hover">Clik</a></p>
           <input
             type="submit"
-            
             disabled={!email || !password}
             className="btn-submit"
           />

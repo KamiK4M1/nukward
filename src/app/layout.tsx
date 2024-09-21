@@ -1,6 +1,7 @@
 import { Session } from 'inspector'
 import './globals.css'
 import SessionProvider from './auth/SessionProvidor'
+
 export default function RootLayout({
   children,
 }: {

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    
+}
+
+body {
+    background-image: linear-gradient(125deg,#7e7e7ea6,rgb(211, 211, 211));
+    margin-bottom: 40px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.Top {
+    position: relative;
+    padding: 5px;
+    background-color: rgb(69, 14, 14);
+    box-shadow: 4px 4px 8px 4px rgba(59, 59, 59, 0.384);
+    text-align: left;
+
+
+}
+.in-box {
+    overflow-y: hidden; /* เริ่มต้นทำการ์ด */
+    cursor: pointer;
+    transition: 400ms;
+}
+.in-box:hover{   /* ที่ยื่นออกมา */
+    height:480px;
+}
+.in-box .image {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.in-box .image image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /*จบทำการ์ด*/
+}     
+
+
+.search {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 40px;
+
+}
+
+#icon {
+    position: relative;
+    color: white;
+
+
+}
+
+.Title {
+    position: relative;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: right;
+}
+.ok {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+
+}
+
+.box {
+    display: block;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 20%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.in-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+    height: 300px;
+}
+
+.signin {
+    position: relative;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: right;
+    margin-left: 40px;
+    float: right;
+}
